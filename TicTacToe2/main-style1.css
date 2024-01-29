@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
+  /*
   body {
     height: 100vh;
     background: linear-gradient(135deg, #8052ec, #d161ff);
   }
+  */
   html {
     font-size: 16px;
   }

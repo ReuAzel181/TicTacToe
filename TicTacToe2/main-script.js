@@ -52,7 +52,6 @@ const enableButtons = () => {
 
 // ... (The rest of your existing code below)
 
-
 // This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
@@ -82,6 +81,7 @@ restartBtn.addEventListener("click", () => {
 });
 
 // Win Logic
+// Win Logic
 const winChecker = () => {
   // Loop through all win patterns
   for (let i of winningPattern) {
@@ -91,15 +91,22 @@ const winChecker = () => {
       btnRef[i[2]].innerText,
     ];
     // Check if elements are filled
-    // If 3 empty elements are same and would give win as would
-    if (element1 != "" && element2 != "" && element3 != "") {
-      if (element1 == element2 && element2 == element3) {
+    // If 3 empty elements are the same and would give win as would
+    if (element1 !== "" && element2 !== "" && element3 !== "") {
+      if (element1 === element2 && element2 === element3) {
         // If all 3 buttons have the same values then pass the value to winFunction
         winFunction(element1);
+        return; // Exit the function if a winner is found
       }
     }
   }
+
+  // Check for a draw
+  if (count === 9) {
+    drawFunction();
+  }
 };
+
 
 // Display X/O on click and toggle background color
 btnRef.forEach((element) => {
@@ -126,8 +133,6 @@ btnRef.forEach((element) => {
       }
     });
   });
-  
-
 
 // Enable Buttons and disable popup on page load
 window.onload = enableButtons;

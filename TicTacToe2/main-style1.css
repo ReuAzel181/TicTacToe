@@ -10,6 +10,15 @@
     background: linear-gradient(135deg, #8052ec, #d161ff);
   }
   */
+  .winning-line {
+    position: absolute;
+    width: 0;
+    height: 8px; /* Adjust the thickness of the line */
+    background-color: yellow; /* Adjust the color of the line */
+    transition: width 0.5s ease-in-out; /* Adjust the animation duration and timing function */
+    z-index: 999; /* Set a high z-index to ensure the line is on top */
+  }
+  
   html {
     font-size: 16px;
   }

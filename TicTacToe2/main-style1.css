@@ -9,16 +9,6 @@
     height: 100vh;
     background: linear-gradient(135deg, #8052ec, #d161ff);
   }
-  */
-  .winning-line {
-    position: absolute;
-    width: 0;
-    height: 8px; /* Adjust the thickness of the line */
-    background-color: yellow; /* Adjust the color of the line */
-    transition: width 0.5s ease-in-out; /* Adjust the animation duration and timing function */
-    z-index: 999; /* Set a high z-index to ensure the line is on top */
-  }
-  
   html {
     font-size: 16px;
   }
@@ -34,28 +24,43 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2vmin;
+    justify-content: center;  /* Center the cells horizontally */
+    align-items: center;
   }
   .button-option {
     background: #ffffff;
     height: 22vmin;
     width: 22vmin;
     border: none;
-    border-radius: 8px;
-    font-size: 12vmin;
+    border-radius: 5px;
+    font-family: "Arial", sans-serif;  /* Use a different font */
+    font-size: 10vmin;  /* Adjust the font size as needed */
+    font-weight: bolder; 
     color: #d161ff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
-  #restart {
-    font-size: 1.3em;
-    padding: 1em;
-    border-radius: 8px;
-    background-color: #0a0027;
-    color: #ffffff;
-    border: none;
-    position: relative;
-    margin: 1.5em auto 0 auto;
-    display: block;
-  }
+
+/* Add this to your existing CSS */
+
+/* Add this to your existing CSS */
+
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: fixed;  /* Use fixed position to keep it in a fixed location */
+  top: 50%;  /* Adjust the top position as needed */
+  right: 0;  /* Position it at the right side of the screen */
+  transform: translate(0, -50%) rotate(-90deg);  /* Rotate the text vertically */
+  writing-mode: vertical-rl; /* Additional property for IE/Edge support */
+  white-space: nowrap; /* Prevent text wrapping */
+  display: block;
+}
+
+
   .popup {
     background: linear-gradient(135deg, #8052ec, #d161ff);
     height: 100%;
@@ -76,6 +81,8 @@
     color: #ffffff;
     border-radius: 0.2em;
     border: none;
+  
+ 
   }
   #message {
     color: #ffffff;
@@ -85,3 +92,5 @@
   .popup.hide {
     display: none;
   }
+/* Add this to your existing CSS */
+

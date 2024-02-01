@@ -50,17 +50,21 @@ const enableButtons = () => {
   document.body.style.backgroundColor = currentColor;
 };
 
-// ... (The rest of your existing code below)
+
+
 
 // This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
   if (letter == "X") {
     msgRef.innerHTML = "&#x1F389; <br> 'X' Wins";
+    
   } else {
     msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
+   
   }
 };
+
 
 // Function for draw
 const drawFunction = () => {
@@ -106,39 +110,6 @@ const winChecker = () => {
   }
 };
 
-// Display X/O on click and toggle background color
-btnRef.forEach((element) => {
-  element.addEventListener("click", () => {
-    if (element.innerText === "") {
-      // Check if the button has not been clicked
-      if (xTurn) {
-        xTurn = false;
-        // Display X and set color to orange
-        element.innerText = "X";
-        element.style.color = orangeColor;
-        // Show notification for X's turn
-        showNotification("It's O's turn");
-      } else {
-        xTurn = true;
-        // Display O and set color to blue
-        element.innerText = "O";
-        element.style.color = blueColor;
-        // Show notification for O's turn
-        showNotification("It's X's turn");
-      }
-
-      // Increment count on each click
-      count += 1;
-      winChecker();
-
-      // Toggle background color after the turn
-      currentColor = xTurn ? blueColor : orangeColor;
-      document.body.style.backgroundColor = currentColor;
-    }
-  });
-});
-
-// Function to show notification on the page
 const showNotification = (message) => {
   const turnNotification = document.getElementById('turn-notification');
   turnNotification.textContent = message;
@@ -157,8 +128,46 @@ const showNotification = (message) => {
       btnRef.forEach((element) => {
           element.disabled = false;
       });
-  }, 2000);
+  }, 700);
 };
+
+// Display X/O on click and toggle background color
+btnRef.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (element.innerText === "") {
+      // Check if the button has not been clicked
+      if (xTurn) {
+        xTurn = false;
+        // Display X and set color to orange
+        element.innerText = "X";
+        element.style.color = orangeColor;
+      } else {
+        xTurn = true;
+        // Display O and set color to blue
+        element.innerText = "O";
+        element.style.color = blueColor;
+      }
+
+      // Increment count on each click
+      count += 1;
+      winChecker();
+
+      // Check for a winner before showing notification
+      if (!element.disabled) {
+        // Toggle background color after the turn
+        currentColor = xTurn ? blueColor : orangeColor;
+        document.body.style.backgroundColor = currentColor;
+
+        // Show notification for the next player's turn
+        if (xTurn) {
+          showNotification("It's O's turn");
+        } else {
+          showNotification("It's X's turn");
+        }
+      }
+    }
+  });
+});
 
 
 // Enable Buttons and disable popup on page load

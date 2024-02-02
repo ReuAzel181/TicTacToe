@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="main-style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-rZ5vG7PYA2vQ6iNab1d49nFTB+i7qbgKCF8fOL+RDQwH8I2HaQXfJbVIYK65c16ew03P4TwNcCo+FZExhQ4XbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
    <div class="wrapper">
        <div class="container">
            <button class="button-option"></button>
@@ -20,16 +23,14 @@
            <button class="button-option"></button>
            <button class="button-option"></button>
        </div>
-       <button id="restart">Restart</button>
    </div>
+<!-- Use an image for the restart button -->
+    <button id="restart" class="restart-button"></button>
 
    <div class="popup hide">
        <p id="message">Sample Message</p>
        <button id="new-game">New Game</button>
    </div>
-   <!-- Add this within the body tag -->
-<!-- Add this within the body tag -->
-<div id="turn-notification" style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background: #ffffff; padding: 10px; border-radius: 5px; color: #000000; font-size: 1em; opacity: 0; transition: opacity 0.5s ease-in-out; z-index: 3;">It's X's Turn</div>
 
     <!-- Script -->
     <script src="main-script.js"></script>

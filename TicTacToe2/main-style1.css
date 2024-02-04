@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -41,18 +40,26 @@
     color: #d161ff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
-  .restart-button {
-    background: url("/restart.png") no-repeat; /* Set the image as the background */
-    background-size: contain; /* Ensure the image is contained within the button */
-    width: 40px; /* Adjust the width of the button as needed */
-    height: 40px; /* Adjust the height of the button as needed */
-    border: none;
-    transform: translate(0, -50%) rotate(-90deg);
-    writing-mode: vertical-rl;
-    white-space: nowrap;
-    display: block;
-}
 
+/* Add this to your existing CSS */
+
+/* Add this to your existing CSS */
+
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: fixed;  /* Use fixed position to keep it in a fixed location */
+  top: 50%;  /* Adjust the top position as needed */
+  right: 0;  /* Position it at the right side of the screen */
+  transform: translate(0, -50%) rotate(-90deg);  /* Rotate the text vertically */
+  writing-mode: vertical-rl; /* Additional property for IE/Edge support */
+  white-space: nowrap; /* Prevent text wrapping */
+  display: block;
+}
 
 
   .popup {

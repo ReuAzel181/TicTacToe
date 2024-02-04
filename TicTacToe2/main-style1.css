@@ -4,12 +4,7 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
-  /*
-  body {
-    height: 100vh;
-    background: linear-gradient(135deg, #8052ec, #d161ff);
-  }
-  */
+
   html {
     font-size: 16px;
   }
@@ -41,26 +36,23 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
 
-/* Add this to your existing CSS */
 
-/* Add this to your existing CSS */
-
-#restart {
-  font-size: 1.3em;
-  padding: 1em;
-  border-radius: 8px;
-  background-color: #0a0027;
-  color: #ffffff;
-  border: none;
-  position: fixed;  /* Use fixed position to keep it in a fixed location */
-  top: 50%;  /* Adjust the top position as needed */
-  right: 0;  /* Position it at the right side of the screen */
-  transform: translate(0, -50%) rotate(-90deg);  /* Rotate the text vertically */
-  writing-mode: vertical-rl; /* Additional property for IE/Edge support */
-  white-space: nowrap; /* Prevent text wrapping */
-  display: block;
-}
-
+  #restart {
+    font-size: 2vw; /* Adjust the font size based on viewport width */
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #0a0027;
+    color: #ffffff;
+    border: none;
+    position: fixed;
+    top: 50%;
+    left: -40%; /* Adjust the left position to move it to the left side */
+    transform: translate(0, -50%) rotate(-90deg);
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    display: block;
+  }
+  
 
   .popup {
     background: linear-gradient(135deg, #8052ec, #d161ff);
@@ -93,5 +85,3 @@
   .popup.hide {
     display: none;
   }
-/* Add this to your existing CSS */
-

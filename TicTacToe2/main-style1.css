@@ -4,18 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-<<<<<<< HEAD
-}
 
-.restart-button {
-  background: url("/restart.png") no-repeat; /* Set the image as the background */
-  background-size: contain; /* Ensure the image is contained within the button */
-  width: 40px; /* Adjust the width of the button as needed */
-  height: 40px; /* Adjust the height of the button as needed */
-  position: fixed; /* Fix the position */
-  top: 200px; /* Adjust the top position */
-  left: 20px; /* Adjust the left position */
-  z-index: 999; /* Set a higher z-index to ensure it appears above other elements */
 }
 
 
@@ -37,10 +26,7 @@
 }
 
 
-=======
-  }
-  
->>>>>>> update
+
   .button-option {
     background: #ffffff;
     height: 22vmin;

@@ -4,38 +4,31 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
-}
-
-.restart-button {
-  background: url("/restart.png") no-repeat; /* Set the image as the background */
-  background-size: contain; /* Ensure the image is contained within the button */
-  width: 40px; /* Adjust the width of the button as needed */
-  height: 40px; /* Adjust the height of the button as needed */
-  position: fixed; /* Fix the position */
-  top: 200px; /* Adjust the top position */
-  left: 20px; /* Adjust the left position */
-  z-index: 999; /* Set a higher z-index to ensure it appears above other elements */
-}
-
-
-.wrapper {
+  }
+  /*
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+  }
+  */
+  html {
+    font-size: 16px;
+  }
+  .wrapper {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-}
-
-.container {
+  }
+  .container {
     width: 70vmin;
     height: 70vmin;
     display: flex;
     flex-wrap: wrap;
     gap: 2vmin;
-    justify-content: center;
+    justify-content: center;  /* Center the cells horizontally */
     align-items: center;
-}
-
-
+  }
   .button-option {
     background: #ffffff;
     height: 22vmin;

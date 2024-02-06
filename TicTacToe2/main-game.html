@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="main-style1.css">
 </head>
 <body>
-<<<<<<< HEAD
-
-=======
->>>>>>> update
    <div class="wrapper">
        <div class="container">
            <button class="button-option"></button>
@@ -24,7 +20,7 @@
            <button class="button-option"></button>
            <button class="button-option"></button>
        </div>
-       <button id="restart">Restart</button>
+       <button id="restart" class="restart-style">Restart</button>
    </div>
 
 
@@ -33,9 +29,12 @@
        <p id="message">Sample Message</p>
        <button id="new-game">New Game</button>
    </div>
-   <!-- Add this within the body tag -->
-<!-- Add this within the body tag -->
-<div id="turn-notification" style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background: #ffffff; padding: 10px; border-radius: 5px; color: #000000; font-size: 1em; opacity: 0; transition: opacity 0.5s ease-in-out; z-index: 3;">It's X's Turn</div>
+
+   <div>
+    <a href="enter.html" id="Back" class="restart-style" style="position: relative; top: 30px; left: 40px;">Back</a>
+    </div>
+
+    <div id="turn-notification" style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background: #ffffff; padding: 10px; border-radius: 5px; color: #000000; font-size: 1em; opacity: 0; transition: opacity 0.5s ease-in-out; z-index: 3;">It's X's Turn</div>
 
     <!-- Script -->
     <script src="main-script.js"></script>

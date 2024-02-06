@@ -12,31 +12,46 @@ body {
 .login-container {
     text-align: center;
     position: relative; /* Add this line to make the container a positioning context */
-    z-index: 2; /* Add this line to set z-index for the container */
+    z-index: 5; /* Add this line to set z-index for the container */
+  
+
 }
+
+.logo img {
+    width: 400px; /* Adjust width as needed */
+    position: fixed; /* Add position fixed to enable positioning */
+    top: 45%; /* Position the top edge of the image at the vertical center of the viewport */
+    left: 50%; /* Position the left edge of the image at the horizontal center of the viewport */
+    transform: translate(-50%, -50%); /* Move the image up by 50% of its own height and left by 50% of its own width to center it */
+}
+
 
 #playButton {
-    position: absolute; /* Add this line to position the play button */
-    top: 100px; /* Adjust as needed */
-    left: 10%; /* Adjust as needed */
-    transform: translate( -50%); /* Center the button */
-    z-index: 3; /* Add this line to set z-index for the play button */
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 20px 40px;
-    border-radius: 8px;
-    font-size: 24px;
+    font-family: "Arial", sans-serif; 
+    font-weight: bold;
+    position: fixed; /* Add this line to position the play button */
+    top: 80%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%); /* Center the button */
+    background-color: #ffbf00;
+    color: #e5ebff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
+
+#playButton:active {
+    top: 80.5%; 
+}
+
 
 #playButton:hover {
-    background-color: #2980b9;
+    background-color: #ffa218;
+    transform: scale(1.1) translateX(-45%); /* Scale the button and keep it centered */
 }
-
-
-
 /* From : TeenageProgrammer */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -46,7 +61,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 
 
 .container{
@@ -66,74 +80,7 @@ body {
     align-items: center;
 }
 
-.container nav h1{
-    font-size: 2.6em;
-    color: #fff;
-    position: relative;
-    cursor: pointer;
-    pointer-events: all;
-    letter-spacing: 4px;
-}
 
-.container nav h1 span{
-    color: #00bfff;
-}
-
-.container nav ul{
-    display: flex;
-}
-
-.container nav ul li{
-    position: relative;
-    list-style: none;
-    font-size: 1.5em;
-    font-weight: 400;
-    padding: 12px 18px;
-    cursor: pointer;
-    pointer-events: all;
-    overflow: hidden;
-}
-
-.container nav ul li::after{
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    width: 0%;
-    height: 3px;
-    left: 50%;
-    background: #00bfff;
-    transform: translateX(-50%);
-    transition: .3s;
-}
-
-.container nav li:hover{
-    color: #00bfff;
-}
-
-.container nav li:hover::after{
-    width: 80%;
-}
-
-.container section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px);
-    text-align: center;
-    pointer-events: none;
-}
-
-.textBox h1{
-    font-size: 3.4em;
-}
-
-.textBox h1 span{
-    color: #00bfff;
-}
-
-.textBox p{
-    font-size: 1.2em;
-}
 
 .textBox .homeBtn{
     font-family: 'Poppins';
@@ -153,7 +100,6 @@ body {
 
 .textBox .homeBtn:hover{
     background-color: var(--i);
-    color: #000;
 }
 
 .bgAnimation{
@@ -165,35 +111,40 @@ body {
     display: grid;
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: repeat(20,1fr);
-    background: #1d1d1d;
+    background: #146aa7a5;
     filter: saturate(2);
     overflow: hidden;
 }
 
-.colorBox{
-    z-index: 2;
+.colorBox {
     filter: brightness(1.1);
-    transition: 2s ease;
+    transition: 1.5s ease; /* Tagal ng pag fade ng boxes */
     position: relative;
-    margin: 2px;
-    background: #1d1d1d;
+    margin: 5px; /* Layo ng box sa iba */
+    padding: 10px; 
+    width: 110px; 
+    height: 70px; 
+    background: #0000ff29; /* Color ng box */
+    border-radius: 10px;
 }
 
+
+
 .colorBox:hover{
-    background: #00bfff;
+    background: #ffffff90;
     transition-duration: 0s;
 }
 
 .backgroundAmim{
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 40px;
-    background: #00bfff;
-    filter: blur(60px);
+    height: 20px;
+    background: #0011ff;
+    filter: blur(40px);
     animation: animBack 6s linear infinite;
 }
+
+
 
 @keyframes animBack {
     0%{

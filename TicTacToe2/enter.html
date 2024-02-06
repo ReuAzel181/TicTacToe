@@ -9,25 +9,30 @@
 </head>
 
 <body>
-    <div class="login-container">
-        <!-- Your login form and UI go here -->
+    <div class="login-container" >
         <button id="playButton">PLAY</button>
     </div>
 
+      
+      <audio id="clickSound">
+        <source src="/sounds/click.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      
 
     <div class="bgAnimation" id="bgAnimation">
         <div class="backgroundAmim">
 
         </div>
     </div>
-
-    <div class="login-container" style="color: antiquewhite;">
-        <h1>Hello! Welcome to the Game</h1>
+   
+    <div class="login-container logo" id="logo" style="color: antiquewhite;">
+        <img src="../img/Logo.png" alt="error404">
     </div>
 
     <audio id="bgMusic" autoplay loop preload="muted">
-        <source src="../sounds/bg.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
+        <source src="/sounds/bg.mp3" type="audio/mp3">
+
     </audio>
     
     

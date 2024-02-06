@@ -170,14 +170,19 @@ body {
     overflow: hidden;
 }
 
-.colorBox{
+.colorBox {
     z-index: 2;
     filter: brightness(1.1);
     transition: 2s ease;
     position: relative;
-    margin: 2px;
-    background: #1d1d1d;
+    margin: 2px; /* Increased margin for better separation */
+    padding: 5px; /* Added padding */
+    width: 70px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background: #1d1d1d; /* Initial color */
 }
+
+
 
 .colorBox:hover{
     background: #00bfff;
@@ -194,6 +199,8 @@ body {
     filter: blur(60px);
     animation: animBack 6s linear infinite;
 }
+
+
 
 @keyframes animBack {
     0%{

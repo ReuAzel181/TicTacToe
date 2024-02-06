@@ -8,11 +8,12 @@ document.getElementById('playButton').addEventListener('click', () => {
 
 const bgAnimation = document.getElementById('bgAnimation');
 
-const numberOfColorBoxes = 400;
+const numberOfColorBoxes = 180;
 
 for (let i = 0; i < numberOfColorBoxes; i++) {
     const colorBox = document.createElement('div');
     colorBox.classList.add('colorBox');
     bgAnimation.append(colorBox)
 }
+
 

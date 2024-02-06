@@ -37,7 +37,7 @@
   }
 
 
-  #restart {
+  .restart-style {
     font-size: 2vw; /* Adjust the font size based on viewport width */
     padding: 1em;
     border-radius: 8px;

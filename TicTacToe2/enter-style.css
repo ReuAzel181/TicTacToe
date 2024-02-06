@@ -17,9 +17,9 @@ body {
 
 #playButton {
     position: absolute; /* Add this line to position the play button */
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%); /* Center the button */
+    top: 100px; /* Adjust as needed */
+    left: 10%; /* Adjust as needed */
+    transform: translate( -50%); /* Center the button */
     z-index: 3; /* Add this line to set z-index for the play button */
     background-color: #3498db;
     color: #fff;
@@ -34,8 +34,6 @@ body {
 #playButton:hover {
     background-color: #2980b9;
 }
-
-/* Rest of your CSS remains unchanged */
 
 
 

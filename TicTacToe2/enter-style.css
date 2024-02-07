@@ -45,14 +45,17 @@ body {
 
 #playButton:active {
     top: 80.5%; 
+    cursor: progress;
 }
 
 
 #playButton:hover {
-    background-color: #ffa218;
-    transform: scale(1.1) translateX(-45%); /* Scale the button and keep it centered */
+    font-weight:bolder;
+    background-color: #ffb341;
+    transform: scale(1.1) translateX(-45%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 1.0);
 }
-/* From : TeenageProgrammer */
+/* From : TeenageProgrammer - MODIFIER BY OUR TEAM */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 

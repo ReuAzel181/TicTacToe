@@ -78,11 +78,19 @@ newgameBtn.addEventListener("click", () => {
   enableButtons();
 });
 
-// Restart Game
-restartBtn.addEventListener("click", () => {
+// Get the restart button element
+const restartButton = document.getElementById('restart');
+
+// Add click event listener to the restart button
+restartButton.addEventListener('click', (event) => {
+  // Prevent the default action (page reload)
+  event.preventDefault();
+
+  // Your restart logic here (e.g., resetting game state)
   count = 0;
   enableButtons();
 });
+
 
 // Win Logic
 const winChecker = () => {
@@ -130,6 +138,17 @@ const showNotification = (message) => {
       });
   }, 700);
 };
+// Get all button options
+const buttonOptions = document.querySelectorAll('.button-option');
+
+// Add click event listener to each button option
+buttonOptions.forEach(button => {
+  button.addEventListener('click', () => {
+    // Toggle the 'clicked' class
+    button.classList.toggle('clicked');
+  });
+});
+
 
 // Display X/O on click and toggle background color
 btnRef.forEach((element) => {
@@ -168,6 +187,10 @@ btnRef.forEach((element) => {
     }
   });
 });
+
+
+// Hidden Sidebar
+
 
 
 // Enable Buttons and disable popup on page load

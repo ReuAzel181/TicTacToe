@@ -31,11 +31,17 @@
    </div>
 
    <div>
-    <a href="enter.html" id="Back" class="restart-style" style="position: relative; top: 30px; left: 40px;">Back</a>
+    <a href="enter.html" id="Back" class="restart-style" >Back</a>
     </div>
 
     <div id="turn-notification" style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background: #ffffff; padding: 10px; border-radius: 5px; color: #000000; font-size: 1em; opacity: 0; transition: opacity 0.5s ease-in-out; z-index: 3;">It's X's Turn</div>
 
+    <audio id="bgMusic" autoplay loop preload="muted">
+        <source src="/sounds/main.mp3" type="audio/mp3">
+
+    </audio>
+
+    
     <!-- Script -->
     <script src="main-script.js"></script>
 </body>

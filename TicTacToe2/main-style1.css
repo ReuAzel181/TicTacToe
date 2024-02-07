@@ -1,87 +1,127 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
 
-  html {
-    font-size: 16px;
-  }
-  .wrapper {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  .container {
-    width: 70vmin;
-    height: 70vmin;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vmin;
-    justify-content: center;  /* Center the cells horizontally */
-    align-items: center;
-  }
-  .button-option {
-    background: #ffffff;
-    height: 22vmin;
-    width: 22vmin;
-    border: none;
-    border-radius: 5px;
-    font-family: "Arial", sans-serif;  /* Use a different font */
-    font-size: 10vmin;  /* Adjust the font size as needed */
-    font-weight: bolder; 
-    color: #d161ff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
+html {
+  font-size: 16px;
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-option {
+  background: #ffffff;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 10vmin;
+  font-weight: bolder;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.button-option:hover {
+  transform: scale(1.05);
+}
+
+.button-option:active {
+  transform: scale(1);
+}
+
+.button-option.clicked:active {
+  transform: scale(1) !important;
+}
+
+.button-option.clicked:hover {
+  transform: scale(1) !important;
+}
+
+.restart-style {
+  font-size: 2vw;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  top: 10%; /* Adjust the top position for the "Restart" button */
+  left: 100%; /* Adjust the left position for the "Restart" button */
+  transform: translateX(-50%) rotate(-90deg);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  display: block;
+}
+
+#Back {
+  font-size: 2vw;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  top: 10%; /* Adjust the top position for the "Back" button */
+  left: 80%; /* Adjust the left position for the "Back" button */
+  transform: translateX(-50%) rotate(-90deg);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  display: block;
+}
 
 
-  .restart-style {
-    font-size: 2vw; /* Adjust the font size based on viewport width */
-    padding: 1em;
-    border-radius: 8px;
-    background-color: #0a0027;
-    color: #ffffff;
-    border: none;
-    position: fixed;
-    top: 50%;
-    left: -40%; /* Adjust the left position to move it to the left side */
-    transform: translate(0, -50%) rotate(-90deg);
-    writing-mode: vertical-rl;
-    white-space: nowrap;
-    display: block;
-  }
-  
 
-  .popup {
-    background: linear-gradient(135deg, #8052ec, #d161ff);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    z-index: 2;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 12vmin;
-  }
-  #new-game {
-    font-size: 0.6em;
-    padding: 0.5em 1em;
-    background-color: #0a0027;
-    color: #ffffff;
-    border-radius: 0.2em;
-    border: none;
-  
- 
-  }
-  #message {
-    color: #ffffff;
-    text-align: center;
-    font-size: 1em;
-  }
-  .popup.hide {
-    display: none;
-  }
+
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+
+.popup.hide {
+  display: none;
+}

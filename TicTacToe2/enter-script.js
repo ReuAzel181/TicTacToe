@@ -3,7 +3,7 @@ document.getElementById('playButton').addEventListener('click', () => {
     var clickSound = document.getElementById("clickSound");
     clickSound.play();
 
-    // Delay the redirection by 1 second (1000 milliseconds)
+    // Delay the redirection by 1 second 
     setTimeout(() => {
         // Redirect to the main game page
         window.location.href = 'main-game.html';

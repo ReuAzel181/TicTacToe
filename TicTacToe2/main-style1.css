@@ -12,7 +12,7 @@ html {
 .wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 45%;
   left: 50%;
 }
 
@@ -65,8 +65,8 @@ html {
   cursor: pointer;
   border: none;
   position: fixed;
-  top: 10%; /* Adjust the top position for the "Restart" button */
-  left: 100%; /* Adjust the left position for the "Restart" button */
+  top: 80%; /* Adjust the top position for the "Restart" button */
+  left: 38%; /* Adjust the left position for the "Restart" button */
   transform: translateX(-50%) rotate(-90deg);
   writing-mode: vertical-rl;
   white-space: nowrap;
@@ -82,8 +82,8 @@ html {
   cursor: pointer;
   border: none;
   position: fixed;
-  top: 10%; /* Adjust the top position for the "Back" button */
-  left: 80%; /* Adjust the left position for the "Back" button */
+  top: 82%; /* Adjust the top position for the "Back" button */
+  left: 63%; /* Adjust the left position for the "Back" button */
   transform: translateX(-50%) rotate(-90deg);
   writing-mode: vertical-rl;
   white-space: nowrap;

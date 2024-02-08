@@ -84,11 +84,20 @@ const restartButton = document.getElementById('restart');
 // Add click event listener to the restart button
 restartButton.addEventListener('click', (event) => {
   // Prevent the default action (page reload)
+  
   event.preventDefault();
 
   // Your restart logic here (e.g., resetting game state)
   count = 0;
   enableButtons();
+});
+
+document.getElementById('Back').addEventListener('click', () => {
+  // Play the click sound
+  var clickSound = document.getElementById("clickSound");
+  clickSound.play();
+
+  // Delay the redirection by 1 second (1000 milliseconds)
 });
 
 

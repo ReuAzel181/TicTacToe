@@ -6,40 +6,40 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    position: relative; /* Add this line to make the body a positioning context */
+    position: relative; 
 }
 
 .login-container {
     text-align: center;
-    position: relative; /* Add this line to make the container a positioning context */
-    z-index: 5; /* Add this line to set z-index for the container */
+    position: relative; 
+    z-index: 5; 
   
 
 }
 
 .logo img {
-    width: 400px; /* Adjust width as needed */
-    position: fixed; /* Add position fixed to enable positioning */
-    top: 45%; /* Position the top edge of the image at the vertical center of the viewport */
-    left: 50%; /* Position the left edge of the image at the horizontal center of the viewport */
-    transform: translate(-50%, -50%); /* Move the image up by 50% of its own height and left by 50% of its own width to center it */
+    width: 400px; 
+    position: fixed; 
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
 
 
 #playButton {
     font-family: "Arial", sans-serif; 
     font-weight: bold;
-    position: fixed; /* Add this line to position the play button */
-    top: 80%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%); /* Center the button */
+    position: fixed; 
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%); 
     background-color: #ffbf00;
     color: #e5ebff;
     padding: 10px 30px;
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for transform */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -55,7 +55,7 @@ body {
     transform: scale(1.1) translateX(-45%);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 1.0);
 }
-/* From : TeenageProgrammer - MODIFIER BY OUR TEAM */
+/* From : TeenageProgrammer - MODIFIED BY OUR TEAM */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -64,7 +64,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 
 .container{
     width: 100%;
@@ -82,7 +81,6 @@ body {
     height: 100px;
     align-items: center;
 }
-
 
 
 .textBox .homeBtn{
@@ -127,14 +125,14 @@ body {
     padding: 10px; 
     width: 110px; 
     height: 70px; 
-    background: #0000ff29; /* Color ng box */
+    background: #0000ff29; 
     border-radius: 10px;
 }
 
 
 
 .colorBox:hover{
-    background: #ffffff90;
+    background: #ffffffdd;
     transition-duration: 0s;
 }
 

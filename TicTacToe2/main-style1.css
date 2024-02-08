@@ -12,7 +12,7 @@ html {
 .wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 45%;
+  top: 42%;
   left: 50%;
 }
 
@@ -40,61 +40,20 @@ html {
   transition: transform 0.3s ease;
 }
 
-.button-option:hover {
+.button-option:hover,
+#Back:hover,
+.restart-style:hover {
   transform: scale(1.05);
+  font-weight: bolder;
 }
 
-.button-option:active {
+.button-option:active,
+.restart-style:active {
   transform: scale(1);
 }
 
-.button-option.clicked:active {
-  transform: scale(1) !important;
-}
-
-.button-option.clicked:hover {
-  transform: scale(1) !important;
-}
-
-.restart-style {
-  font-size: 2vw;
-  padding: 1em;
-  border-radius: 8px;
-  background-color: #0a0027;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  position: fixed;
-  top: 80%; /* Adjust the top position for the "Restart" button */
-  left: 38%; /* Adjust the left position for the "Restart" button */
-  transform: translateX(-50%) rotate(-90deg);
-  writing-mode: vertical-rl;
-  white-space: nowrap;
-  display: block;
-}
-
-#Back {
-  font-size: 2vw;
-  padding: 1em;
-  border-radius: 8px;
-  background-color: #0a0027;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  position: fixed;
-  top: 82%; /* Adjust the top position for the "Back" button */
-  left: 63%; /* Adjust the left position for the "Back" button */
-  transform: translateX(-50%) rotate(-90deg);
-  writing-mode: vertical-rl;
-  white-space: nowrap;
-  display: block;
-}
-
-
-
-
 .popup {
-  background: linear-gradient(135deg, #8052ec, #d161ff);
+  background: linear-gradient(135deg, #68c0ff, #1f48ff);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -124,4 +83,40 @@ html {
 
 .popup.hide {
   display: none;
+}
+
+.restart-style,
+#Back {
+  font-size: 2vw;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  transform: translateX(-50%);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  display: block;
+}
+
+.restart-style {
+  top: 78%;
+  left: 34.5%;
+  rotate: -90deg;
+}
+
+#Back {
+  top: 80.1%;
+  left: 60%;
+  rotate: -90deg;
+  text-decoration: none;
+}
+
+.restart-style,
+#Back {
+
+  transform: scale(1.1) ;
+ 
 }

@@ -1,6 +1,6 @@
 # TicTacToe
 
-A simple implementation of the classic TicTacToe game using Unity.
+A simple implementation of the classic TicTacToe game.
 
 ## Description
 

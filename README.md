@@ -12,14 +12,17 @@ This project is a straightforward version of the TicTacToe game where two player
   - Basic win and draw detection.
 
 ## How to Play
-1. Clone the repository.
-2. Open the project in Unity.
-3. Press the Play button in the Unity Editor to start the game.
-4. Players take turns clicking on the grid to place their marks.
-5. The game detects and announces a win or draw condition.
+1. Clone the repository to your local machine.
+2. Open the project in Visual Studio Code (or any code editor).
+3. Run the code in your terminal or command prompt to start the game:
+    - For Python: python tictactoe.py
+    - For JavaScript (Node.js): node tictactoe.js
+4. Gameplay:
+    - Players take turns entering the grid coordinates (e.g., row and column numbers) to place their marks (X or O).
+    - The game ends when one player aligns three marks, or if all spots are filled, resulting in a draw.
    
 ## Installation
-1. Ensure you have Unity installed.
+1. Install Visual Studio Code or any code editor of your choice.
 2. Clone the repository:
 bash
 Copy code
@@ -32,7 +35,7 @@ https://stastic.ui4free.com/public/images/free-figma-game-tic-tac-toe_1635143619
 ### Tuts for making TicTacToe:
 https://www.youtube.com/watch?v=al_AgC2NSCo&t=185s&pp=ygUWY29kaW5nYXJ0aXN0IHRpY3RhY3RvZQ%3D%3D
 
-![UI](https://github.com/ReuAzel181/TicTacToe/blob/main/img/splash.png)
+<img src="https://github.com/ReuAzel181/TicTacToe/blob/main/img/splash.png" alt="UI" width="400" height="400">
 
 **Contributing**
   - Feel free to contribute to the project by submitting issues or pull requests. We welcome any improvements or bug fixes!

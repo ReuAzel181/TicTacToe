@@ -35,7 +35,10 @@ https://stastic.ui4free.com/public/images/free-figma-game-tic-tac-toe_1635143619
 ### Tuts for making TicTacToe:
 https://www.youtube.com/watch?v=al_AgC2NSCo&t=185s&pp=ygUWY29kaW5nYXJ0aXN0IHRpY3RhY3RvZQ%3D%3D
 
-<img src="https://github.com/ReuAzel181/TicTacToe/blob/main/img/splash.png" alt="UI" width="400" height="400">
+<div style="text-align: center;">
+    <img src="https://github.com/ReuAzel181/TicTacToe/blob/main/img/splash.png" alt="UI" width="500" height="400">
+</div>
+
 
 **Contributing**
   - Feel free to contribute to the project by submitting issues or pull requests. We welcome any improvements or bug fixes!
